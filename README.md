@@ -18,7 +18,6 @@ A multithreaded HTTP proxy server built in **C** using POSIX sockets, pthreads, 
 
 ## Architecture
 
-```text
                     ┌──────────────────────┐
                     │      Web Client      │
                     │   (Browser / curl)   │
@@ -153,7 +152,10 @@ A semaphore limits the number of concurrently active client threads.
                        ┌────▼────┐
                        │  Mutex  │
                        └─────────┘
-Technologies Used
+
+
+
+Technologies Used :-
 C
 POSIX TCP Sockets
 pthreads
@@ -162,8 +164,10 @@ POSIX Mutexes
 DNS / gethostbyname()
 HTTP/1.0 and HTTP/1.1 request handling
 Linux / WSL
+
+
 Project Structure
-.
+|
 ├── Makefile
 ├── proxy_server_with_cache.c
 ├── proxy_parse.c
